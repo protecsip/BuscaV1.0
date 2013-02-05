@@ -19,6 +19,8 @@
 		D391900916C0194B000217C5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D391900716C0194B000217C5 /* MainStoryboard_iPhone.storyboard */; };
 		D391900C16C0194B000217C5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D391900A16C0194B000217C5 /* MainStoryboard_iPad.storyboard */; };
 		D391900F16C0194B000217C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D391900E16C0194B000217C5 /* ViewController.m */; };
+		D3C6D61916C130D500A4686B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C6D61716C130D500A4686B /* DetailViewController.m */; };
+		D3C6D61A16C130D500A4686B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3C6D61816C130D500A4686B /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		D391900B16C0194B000217C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		D391900D16C0194B000217C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D391900E16C0194B000217C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3C6D61616C130D500A4686B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D3C6D61716C130D500A4686B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D3C6D61816C130D500A4686B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,9 @@
 				D391900116C0194B000217C5 /* Default.png */,
 				D391900316C0194B000217C5 /* Default@2x.png */,
 				D391900516C0194B000217C5 /* Default-568h@2x.png */,
+				D3C6D61616C130D500A4686B /* DetailViewController.h */,
+				D3C6D61716C130D500A4686B /* DetailViewController.m */,
+				D3C6D61816C130D500A4686B /* DetailViewController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 				D391900616C0194B000217C5 /* Default-568h@2x.png in Resources */,
 				D391900916C0194B000217C5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				D391900C16C0194B000217C5 /* MainStoryboard_iPad.storyboard in Resources */,
+				D3C6D61A16C130D500A4686B /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +189,7 @@
 				D3918FFC16C0194B000217C5 /* main.m in Sources */,
 				D391900016C0194B000217C5 /* AppDelegate.m in Sources */,
 				D391900F16C0194B000217C5 /* ViewController.m in Sources */,
+				D3C6D61916C130D500A4686B /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +316,7 @@
 				D391901416C0194B000217C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -28,6 +28,7 @@
 - (void)CargaDatosWebService:(NSString *)Status;
 - (NSString*) prepareString:(NSString*)a;
 
+
 -(IBAction)Exit:(id)sender;
 
 

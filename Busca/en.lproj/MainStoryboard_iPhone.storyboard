@@ -8,24 +8,24 @@
         <scene sceneID="3g2-Qa-quk">
             <objects>
                 <tableViewController id="OFt-Ad-3pu" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iyX-TU-WM0">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iyX-TU-WM0">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="SOo-iM-GKN">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="1dO-ON-vf1">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <outlet property="delegate" destination="OFt-Ad-3pu" id="jzY-gC-1yi"/>
+                                <outlet property="delegate" destination="OFt-Ad-3pu" id="4KJ-dG-RWt"/>
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EA3-0D-b0i">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EA3-0D-b0i">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -41,17 +41,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                     <connections>
-                        <outlet property="searchDisplayController" destination="0Za-Jh-Cen" id="GvE-tw-xAF"/>
+                        <outlet property="searchDisplayController" destination="RMD-nn-fet" id="oG7-oD-NOM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mf-4g-4oO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="0Za-Jh-Cen">
+                <searchDisplayController id="RMD-nn-fet">
                     <connections>
-                        <outlet property="delegate" destination="OFt-Ad-3pu" id="9j4-xm-oK5"/>
-                        <outlet property="searchBar" destination="SOo-iM-GKN" id="rhH-A9-J1b"/>
-                        <outlet property="searchContentsController" destination="OFt-Ad-3pu" id="UbS-dE-xKo"/>
-                        <outlet property="searchResultsDataSource" destination="OFt-Ad-3pu" id="4cO-Rt-cb4"/>
-                        <outlet property="searchResultsDelegate" destination="OFt-Ad-3pu" id="bFl-x6-rAa"/>
+                        <outlet property="delegate" destination="OFt-Ad-3pu" id="SB3-cD-SUz"/>
+                        <outlet property="searchBar" destination="1dO-ON-vf1" id="fej-qm-lgw"/>
+                        <outlet property="searchContentsController" destination="OFt-Ad-3pu" id="0gT-Ze-ddg"/>
+                        <outlet property="searchResultsDataSource" destination="OFt-Ad-3pu" id="zfH-tW-1KR"/>
+                        <outlet property="searchResultsDelegate" destination="OFt-Ad-3pu" id="aH5-Wp-7J9"/>
                     </connections>
                 </searchDisplayController>
             </objects>

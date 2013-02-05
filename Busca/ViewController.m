@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
@@ -220,7 +221,59 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    
+    
+    DetailViewController *detail = [[DetailViewController alloc] initWithNibName:@"DetailViewController"  bundle:nil];
+    
+
+    
+    NSDictionary *datos;
+    
+    
+    if(isFiltered){
+        datos = [self.filteredTableData objectAtIndex:indexPath.row];
+    }
+    else{
+        datos = [self.allTableData objectAtIndex:indexPath.row];
+    }
+
+    
+    
+    
+    
+    detail.DetailNameStr = [[NSString alloc] initWithString:[datos objectForKey:@"NOMBRE"]];
+    
+    detail.DetailSurNameStr = [[NSString alloc] initWithString:[datos objectForKey:@"APELLIDOS"]];
+    
+    detail.DetailExtStr = [[NSString alloc] initWithString:[datos objectForKey:@"EXTENSION"]];
+    
+    detail.DetailLocationStr = [[NSString alloc] initWithString:[datos objectForKey:@"DSLOCALIZACION"]];
+    
+    detail.DetailContactoStr = [[NSString alloc] initWithString:[datos objectForKey:@"CDCONTACTO"]];
+    
+    NSString *Fecha =[datos objectForKey:@"FECHABD"];
+    
+    
+    Fecha =[Fecha stringByReplacingOccurrencesOfString:@"T" withString:@" "];
+    
+    
+    NSString *dateStr = Fecha;
+    NSDateFormatter *dtF = [[NSDateFormatter alloc] init];
+    [dtF setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *d = [dtF dateFromString:dateStr];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd/MM/yy HH:mm:ss"];
+    NSString *st = [dateFormat stringFromDate:d];
+    
+    Fecha = st;
+
+
+    
+    detail.DetailDateStr = [[NSString alloc] initWithString:Fecha];
+    
+        [self.navigationController pushViewController:detail animated:YES];
+    
 }
 
 
