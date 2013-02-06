@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="OFt-Ad-3pu" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iyX-TU-WM0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="1dO-ON-vf1">
@@ -55,18 +55,26 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="624" y="-85"/>
+            <point key="canvasLocation" x="501" y="-85"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Busca-->
         <scene sceneID="Kou-no-8Hh">
             <objects>
-                <navigationController id="Giz-Yz-IdS" sceneMemberID="viewController">
-                    <toolbarItems/>
+                <navigationController title="Busca" toolbarHidden="NO" id="Giz-Yz-IdS" sceneMemberID="viewController">
+                    <toolbarItems>
+                        <barButtonItem title="Guardar" style="done" id="xlg-v9-UhH"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="Mbl-EJ-8lz"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fU2-j4-dr4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2iL-eX-VpG">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="OFt-Ad-3pu" kind="relationship" relationship="rootViewController" id="6L3-5Y-A0D"/>
                     </connections>
@@ -82,6 +90,7 @@
             <relationships>
                 <relationship kind="action" name="Exit:"/>
                 <relationship kind="action" name="Refrescar:"/>
+                <relationship kind="outlet" name="NavButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="TableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>

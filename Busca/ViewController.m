@@ -23,6 +23,7 @@
 @synthesize allTableData;
 @synthesize filteredTableData;
 @synthesize searchBar;
+@synthesize NavButton;
 @synthesize isFiltered;
 @synthesize verde;
 @synthesize rojo;
@@ -38,6 +39,11 @@
     UIRefreshControl *refreshControl = [UIRefreshControl new];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
+    
+    
+    /*UIBarButtonItem *NavButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(GuardarComentario;)];
+                                                                                                                                            
+    */
     
     
     
@@ -57,6 +63,9 @@
     
 }
 
+-(void) GuardarComentario:(id)sender{
+
+}
 
 
 - (void)refresh:(UIRefreshControl *)sender {
@@ -251,6 +260,11 @@
     detail.DetailLocationStr = [[NSString alloc] initWithString:[datos objectForKey:@"DSLOCALIZACION"]];
     
     detail.DetailContactoStr = [[NSString alloc] initWithString:[datos objectForKey:@"CDCONTACTO"]];
+    
+    
+    detail.Color = [[NSString alloc] initWithString:[datos objectForKey:@"COLOR"]];
+    
+     detail.DetailComentStr = [[NSString alloc] initWithString:[datos objectForKey:@"COMENTARIO"]];
     
     NSString *Fecha =[datos objectForKey:@"FECHABD"];
     

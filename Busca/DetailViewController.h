@@ -17,12 +17,15 @@
     IBOutlet UILabel *DetailExt;
     IBOutlet UILabel *DetailLocation;
     IBOutlet UILabel *DetailDate;
+    IBOutlet UITextField *DetailComent;
     NSString *DetailContactoStr;
     NSString *DetailNameStr;
     NSString *DetailSurNameStr;
     NSString *DetailExtStr;
     NSString *DetailLocationStr;
     NSString *DetailDateStr;
+    NSString *DetailComentStr;
+    NSString *Color;
 
 }
 
@@ -32,7 +35,8 @@
 @property(nonatomic,retain) NSString *DetailExtStr;
 @property(nonatomic,retain) NSString *DetailLocationStr;
 @property(nonatomic,retain) NSString *DetailDateStr;
+@property(nonatomic,retain) NSString *DetailComentStr;
 
-
+@property(nonatomic,retain) NSString *Color;
 
 @end

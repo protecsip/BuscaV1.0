@@ -11,7 +11,7 @@
 @interface TableViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *TableView;
-
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *NavButton;
 
 @property (nonatomic,retain) NSMutableArray* allTableData;
 @property (nonatomic, retain) NSMutableArray* filteredTableData;
@@ -24,6 +24,7 @@
 @property (nonatomic,assign) UIColor* rojo;
 
 
+- (void) GuardarComentario:(id)sender;
 - (void)empezarAParsear:(NSData *)urlData;
 - (void)CargaDatosWebService:(NSString *)Status;
 - (NSString*) prepareString:(NSString*)a;

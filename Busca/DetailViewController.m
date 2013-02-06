@@ -22,6 +22,8 @@
 @synthesize DetailExtStr;
 @synthesize DetailLocationStr;
 @synthesize DetailDateStr;
+@synthesize DetailComentStr;
+@synthesize Color;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -59,6 +61,21 @@
     DetailExt.text = DetailExtStr;
     DetailLocation.text = DetailLocationStr;
     DetailDate.text = DetailDateStr;
+    DetailComent.text = DetailComentStr;
+    
+    
+    if([Color isEqualToString:(@"rojo")]==1)
+    {
+        DetailLocation.textColor = [UIColor redColor];
+        DetailDate.textColor =[UIColor redColor];
+    }else{
+        DetailLocation.textColor = [UIColor blueColor];
+        DetailDate.textColor = [UIColor blueColor];
+    }
+    
+    
+    
+    
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
