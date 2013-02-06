@@ -84,21 +84,6 @@
             <point key="canvasLocation" x="98" y="-85"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="TableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="Exit:"/>
-                <relationship kind="action" name="Refrescar:"/>
-                <relationship kind="outlet" name="NavButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="TableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="UIRefreshControl" superclassName="UIControl">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIRefreshControl.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
