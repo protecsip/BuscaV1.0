@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController{
+@interface DetailViewController : UIViewController 
+{
 
 
     IBOutlet UIWebView *DetailWebImage;
@@ -38,5 +39,4 @@
 @property(nonatomic,retain) NSString *DetailComentStr;
 
 @property(nonatomic,retain) NSString *Color;
-
 @end
