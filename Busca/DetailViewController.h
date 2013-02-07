@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController 
 {
 
 
@@ -29,14 +29,6 @@
     NSString *Color;
 
 }
-
--(IBAction)hideKeyboard:(id)Sender;
-
--(IBAction)GuardarComentario:(id)Sender;
-
-
-
-@property(nonatomic,retain) UITextField *DetailComent;
 
 @property(nonatomic,retain) NSString *DetailContactoStr;
 @property(nonatomic,retain) NSString *DetailNameStr;

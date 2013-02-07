@@ -14,20 +14,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[TableViewController tableView:cellForRowAtIndexPath:]:ViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.filteredTableData objectAtIndex:indexPath.row">
-            </PersistentString>
-            <PersistentString
-               value = "filteredTableData">
-            </PersistentString>
-            <PersistentString
-               value = "filteredTableData objectAtIndex:indexPath.row">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "-[DetailViewController viewDidLoad]:DetailViewController.m">
          <PersistentStrings>
             <PersistentString

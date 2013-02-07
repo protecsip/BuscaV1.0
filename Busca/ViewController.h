@@ -24,6 +24,7 @@
 @property (nonatomic,assign) UIColor* rojo;
 
 
+- (void) GuardarComentario:(id)sender;
 - (void)empezarAParsear:(NSData *)urlData;
 - (void)CargaDatosWebService:(NSString *)Status;
 - (NSString*) prepareString:(NSString*)a;
